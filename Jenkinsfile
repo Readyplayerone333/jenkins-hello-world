@@ -21,6 +21,7 @@ pipeline {
         }
         stage('Test'){
             steps{
+                sleep 20
                 sh 'mvn test'
             }
         }
