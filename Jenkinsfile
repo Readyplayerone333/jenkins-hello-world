@@ -14,7 +14,7 @@ pipeline {
             }
         stage('Build'){
             steps{
-                git branch: 'main', url: 'https://github.com/Readyplayerone333/jenkins-hello-world.git'
+                //git branch: 'main', url: 'https://github.com/Readyplayerone333/jenkins-hello-world.git'
                 sh 'mvn clean package -DskipTests=true'
             }
         
